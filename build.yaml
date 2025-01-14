@@ -2,5 +2,5 @@
 include:
   - board: seeeduino_xiao_ble
     shield: bananaboard
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
+##  - board: seeeduino_xiao_ble
+##    shield: settings_reset
