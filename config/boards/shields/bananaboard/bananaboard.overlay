@@ -1,0 +1,19 @@
+/ {
+    chosen {
+        zmk,kscan = &default_kscan;
+    };
+
+    default_kscan: kscan {
+        compatible = "zmk,kscan-gpio-direct";
+        label = "default_kscan";
+        input-gpios = 
+            <&xiao_d 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, //key 0
+            <&xiao_d 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, //key 1
+            <&xiao_d 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, //key 2
+            <&xiao_d 1  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, //key 3
+            <&xiao_d 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, //key 4
+            <&xiao_d 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, //key 5
+            <&xiao_d 9  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>, //key 6
+            <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>; //key 7
+    };
+};
