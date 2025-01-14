@@ -1,18 +1,24 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        artsey00 {
+            bindings = <&kp M>;
+            key-positions = <4 5 6>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             bindings = <
-                &kp N1 &kp N2 &kp N3 &kp N4
-                &kp N5 &kp N6 &kp N7 &kp N8
+&kp S  &kp T  &kp R  &kp A
+&kp O  &kp I  &kp Y  &kp E
             >;
         };
     };
-
-
 };
