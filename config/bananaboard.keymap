@@ -219,13 +219,26 @@
         };
     };
 
+    behaviors {
+        mom_tap: mom_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MOM_TAP";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <125>;
+            quick-tap-ms = <75>;
+            flavor = "tap-preferred";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         defaultLayer {
             bindings = <
-&mt 1 S  &kp T  &kp R  &kp A
-&kp O  &kp I  &kp Y  &kp E
+&mom_tap 1 S  &kp T  &kp R  &mom_tap 2 A
+&kp O         &kp I  &kp Y  &kp E
             >;
         };
 
@@ -236,17 +249,17 @@
             >;
         };
 
-        layer_2 {
+        parentheticalLayer {
             bindings = <
-&trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans
+&kp RBRC        &kp LPAR  &kp RPAR  &trans
+&kp LEFT_BRACE  &kp LBKT  &kp RBKT  &trans
             >;
         };
 
-        layer_3 {
+        punctuationLayer {
             bindings = <
-&trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans
+&kp COMMA  &kp SEMI   &kp BSLH   &kp EXCL
+&kp EQUAL  &kp MINUS  &kp QMARK  &trans
             >;
         };
 
