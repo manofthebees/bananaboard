@@ -261,8 +261,8 @@
 
         customLayer {
             bindings = <
-&trans  &kp C_VOLUME_UP  &kp INSERT       &kp C_MUTE
-&trans  &kp C_VOL_DN     &kp PRINTSCREEN  &kp RIGHT_SHIFT
+&trans       &kp C_VOLUME_UP  &kp INSERT       &kp C_MUTE
+&bootloader  &kp C_VOL_DN     &kp PRINTSCREEN  &kp RIGHT_SHIFT
             >;
         };
 
