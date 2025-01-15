@@ -1,6 +1,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
 
 / {
@@ -231,7 +234,7 @@
         defaultLayer {
             bindings = <
 &mom_tap 1 S  &kp T  &kp R  &mom_tap 2 A
-&kp O         &kp I  &kp Y  &mom_tap 3 E
+&mom_tap 4 O  &kp I  &kp Y  &mom_tap 3 E
             >;
         };
 
