@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/keys.h>
 
-
 &mt {
     quick-tap-ms = <65>;
     flavor = "tap-preferred";
@@ -198,10 +197,52 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        layer_0 {
             bindings = <
 &kp S  &kp T  &kp R  &kp A
 &kp O  &kp I  &kp Y  &kp E
+            >;
+        };
+
+        layer_1 {
+            bindings = <
+&trans  &kp N3  &kp N2  &kp N1
+&trans  &kp N6  &kp N5  &kp N4
+            >;
+        };
+
+        layer_2 {
+            bindings = <
+&trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+&trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans
             >;
         };
     };
