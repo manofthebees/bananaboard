@@ -192,19 +192,25 @@
             bindings = <&kp DEL>;
             key-positions = <2 5>;
         };
+
+        artsey36 {
+            bindings = <&kp N8>;
+            key-positions = <1 2>;
+            layers = <1>;
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        layer_0 {
+        defaultLayer {
             bindings = <
 &kp S  &kp T  &kp R  &kp A
 &kp O  &kp I  &kp Y  &kp E
             >;
         };
 
-        layer_1 {
+        numLayer {
             bindings = <
 &trans  &kp N3  &kp N2  &kp N1
 &trans  &kp N6  &kp N5  &kp N4
