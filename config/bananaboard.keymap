@@ -297,8 +297,8 @@
 
         customLayer {
             bindings = <
-&trans       &kp C_VOLUME_UP  &kp INSERT       &kp C_MUTE
-&bootloader  &kp C_VOL_DN     &kp PRINTSCREEN  &kp RIGHT_SHIFT
+&bootloader  &kp C_VOLUME_UP  &kp INSERT       &kp C_MUTE
+&trans       &kp C_VOL_DN     &kp PRINTSCREEN  &kp RIGHT_SHIFT
             >;
         };
 
@@ -311,8 +311,8 @@
 
         bluetoothLayer {
             bindings = <
-&bootloader  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0
-&trans       &soft_off     &bt BT_SEL 4  &bt BT_SEL 3
+&trans  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0
+&trans  &soft_off     &bt BT_SEL 4  &bt BT_SEL 3
             >;
         };
 
