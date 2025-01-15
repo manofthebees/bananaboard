@@ -238,7 +238,7 @@
         defaultLayer {
             bindings = <
 &mom_tap 1 S  &kp T  &kp R  &mom_tap 2 A
-&kp O         &kp I  &kp Y  &kp E
+&kp O         &kp I  &kp Y  &mom_tap 3 E
             >;
         };
 
@@ -263,10 +263,10 @@
             >;
         };
 
-        layer_4 {
+        customLayer {
             bindings = <
-&trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans
+&trans  &kp C_VOLUME_UP  &kp INSERT       &kp C_MUTE
+&trans  &kp C_VOL_DN     &kp PRINTSCREEN  &kp RIGHT_SHIFT
             >;
         };
 
