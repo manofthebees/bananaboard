@@ -198,6 +198,24 @@
             key-positions = <1 2>;
             layers = <1>;
         };
+
+        artsey37 {
+            bindings = <&kp N7>;
+            key-positions = <2 3>;
+            layers = <1>;
+        };
+
+        artsey38 {
+            bindings = <&kp N0>;
+            key-positions = <5 6>;
+            layers = <1>;
+        };
+
+        artsey39 {
+            bindings = <&kp N9>;
+            key-positions = <6 7>;
+            layers = <1>;
+        };
     };
 
     keymap {
