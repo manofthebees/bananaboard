@@ -224,7 +224,7 @@
 
         defaultLayer {
             bindings = <
-&kp S  &kp T  &kp R  &kp A
+&mt 1 S  &kp T  &kp R  &kp A
 &kp O  &kp I  &kp Y  &kp E
             >;
         };
