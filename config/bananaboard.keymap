@@ -249,6 +249,21 @@
             key-positions = <6 7>;
             layers = <1>;
         };
+
+        lockNav {
+            bindings = <&tog 5>;
+            key-positions = <5 2 7>;
+        };
+
+        lockMouse {
+            bindings = <&tog 7>;
+            key-positions = <1 6 3>;
+        };
+
+        BTprofile {
+            bindings = <&tog 6>;
+            key-positions = <0 4 3 7>;
+        };
     };
 
     behaviors {
