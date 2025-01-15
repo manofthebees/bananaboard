@@ -7,6 +7,7 @@
     quick-tap-ms = <65>;
     flavor = "tap-preferred";
     tapping-term-ms = <90>;
+    bindings = <&mo>, <&kp>;
 };
 
 / {
