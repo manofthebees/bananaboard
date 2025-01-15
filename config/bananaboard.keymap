@@ -13,6 +13,7 @@
         artsey00 {
             bindings = <&kp M>;
             key-positions = <4 5 6>;
+            layers = <0>;
         };
 
         artsey01 {
