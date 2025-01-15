@@ -256,12 +256,12 @@
         };
 
         lockMouse {
-            bindings = <&tog 7>;
+            bindings = <&tog 6>;
             key-positions = <1 6 3>;
         };
 
         BTprofile {
-            bindings = <&tog 6>;
+            bindings = <&tog 7>;
             key-positions = <0 4 3 7>;
         };
     };
@@ -273,8 +273,8 @@
             bindings = <&mo>, <&kp>;
 
             #binding-cells = <2>;
-            tapping-term-ms = <90>;
-            quick-tap-ms = <65>;
+            tapping-term-ms = <130>;
+            quick-tap-ms = <85>;
             flavor = "tap-preferred";
         };
     };
@@ -324,17 +324,17 @@
             >;
         };
 
-        bluetoothLayer {
-            bindings = <
-&trans  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0
-&trans  &soft_off     &bt BT_SEL 4  &bt BT_SEL 3
-            >;
-        };
-
         mouseLayer {
             bindings = <
 &msc SCRL_UP    &mkp LCLK       &mmv MOVE_UP    &mkp RCLK
 &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT
+            >;
+        };
+
+        bluetoothLayer {
+            bindings = <
+&trans  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0
+&trans  &soft_off     &bt BT_SEL 4  &bt BT_SEL 3
             >;
         };
     };
