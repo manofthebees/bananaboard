@@ -12,6 +12,8 @@
     quick-release;
 };
 
+&soft_off { hold-time-ms = <1000>; };
+
 / {
     combos {
         compatible = "zmk,combos";
