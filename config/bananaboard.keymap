@@ -6,6 +6,12 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
 
+&sk {
+    lazy;
+    release-after-ms = <2000>;
+    quick-release;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -146,6 +152,7 @@
             bindings = <&sk LCTRL>;
             key-positions = <0 7>;
             layers = <0>;
+            slow-release;
         };
 
         artsey23 {
