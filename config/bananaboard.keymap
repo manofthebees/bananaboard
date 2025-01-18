@@ -223,12 +223,6 @@
             layers = <0>;
         };
 
-        artsey34 {
-            bindings = <&bt BT_CLR>;
-            key-positions = <1 2 5 6>;
-            timeout-ms = <500>;
-        };
-
         artsey35 {
             bindings = <&kp DEL>;
             key-positions = <2 5>;
@@ -342,8 +336,8 @@
 
         bluetoothLayer {
             bindings = <
-&trans  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0
-&trans  &soft_off     &bt BT_SEL 4  &bt BT_SEL 3
+&trans  &bt BT_SEL 2    &bt BT_SEL 1  &bt BT_SEL 0
+&trans  &bt BT_CLR_ALL  &bt BT_SEL 4  &bt BT_SEL 3
             >;
         };
     };
