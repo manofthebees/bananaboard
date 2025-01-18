@@ -226,7 +226,6 @@
         artsey34 {
             bindings = <&bt BT_CLR>;
             key-positions = <1 2 5 6>;
-            layers = <0>;
             timeout-ms = <500>;
         };
 
